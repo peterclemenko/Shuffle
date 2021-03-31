@@ -24,7 +24,7 @@ RUN npm install webpack@4.42.0
 RUN npm run-script build
 
 # Production environment
-FROM nginx:latest
+FROM nginx:1.19.9
 
 RUN mkdir -p /usr/share/nginx/html/build
 RUN mkdir -p /usr/share/nginx/html/css
