@@ -2,9 +2,8 @@ FROM homeassistant/home-assistant as base
 
 FROM base as builder
 
-RUN apt-get update
-RUN apt-get dist-upgrade -y
-RUN apt install build-essential libffi-dev musl-dev openssl python3 python3-pip -y
+RUN apk --no-cache add --update alpine-sdk libffi libffi-dev musl-dev openssl-dev
+
 
 RUN mkdir /install
 WORKDIR /install

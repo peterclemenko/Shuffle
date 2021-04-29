@@ -1,4 +1,4 @@
-FROM sharptrick/sage-notebook as base
+FROM sagemath/sagemath as base
 
 FROM base as builder
 
