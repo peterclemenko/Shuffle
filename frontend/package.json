@@ -80,7 +80,7 @@
     "websocket": "^1.0.30",
     "yaml": "^1.7.2",
     "yamljs": "^0.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.12.0"
   },
   "scripts": {
     "start": "react-scripts start",
